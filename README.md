@@ -74,6 +74,8 @@ cp -rp /var/ossec_backup/logs/archives/* /var/ossec/logs/archives
 cp -rp /var/ossec_backup/logs/alerts/* /var/ossec/logs/alerts
 cp -rp /var/ossec_backup/queue/rootcheck/* /var/ossec/queue/rootcheck
 cp -rp /var/ossec_backup/queue/syscheck/* /var/ossec/queue/syscheck
+cp -rp /var/ossec_backup/queue/db/* /var/ossec/queue/db
+cp -rp /var/ossec_backup/queue/agents-timestamp /var/ossec/queue/agents-timestamp
 ```
 
 Finally we can start the services again. Please check /var/ossec/logs/ossec.log file to ensure there are no errors or warnings related to the settings migration.
